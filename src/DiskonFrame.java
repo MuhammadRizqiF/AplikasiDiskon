@@ -26,17 +26,75 @@ public class DiskonFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblHargaAsli = new javax.swing.JLabel();
+        lblDiskon = new javax.swing.JLabel();
+        lblHargaAkhir = new javax.swing.JLabel();
+        lblPenghematan = new javax.swing.JLabel();
+        txtHargaAsli = new javax.swing.JTextField();
+        txtHargaAkhir = new javax.swing.JTextField();
+        cbDiskon = new javax.swing.JComboBox<>();
+        btnHitung = new javax.swing.JButton();
+        txtPenghematan = new javax.swing.JTextField();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Aplikasi Perhitungan Diskon");
+
+        lblHargaAsli.setText("Harga Asli");
+
+        lblDiskon.setText("Diskon (%)");
+
+        lblHargaAkhir.setText("Harga Akhir");
+
+        lblPenghematan.setText("Penghematan");
+
+        cbDiskon.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        btnHitung.setText("Hitung");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnHitung)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblHargaAsli)
+                            .addComponent(lblHargaAkhir)
+                            .addComponent(lblDiskon)
+                            .addComponent(lblPenghematan))
+                        .addGap(28, 28, 28)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtHargaAkhir)
+                            .addComponent(txtHargaAsli)
+                            .addComponent(cbDiskon, 0, 100, Short.MAX_VALUE)
+                            .addComponent(txtPenghematan))))
+                .addContainerGap(82, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblHargaAsli)
+                    .addComponent(txtHargaAsli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblDiskon)
+                    .addComponent(cbDiskon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblHargaAkhir)
+                    .addComponent(txtHargaAkhir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblPenghematan)
+                    .addComponent(txtPenghematan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnHitung)
+                .addContainerGap(46, Short.MAX_VALUE))
         );
 
         pack();
@@ -78,5 +136,14 @@ public class DiskonFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnHitung;
+    private javax.swing.JComboBox<String> cbDiskon;
+    private javax.swing.JLabel lblDiskon;
+    private javax.swing.JLabel lblHargaAkhir;
+    private javax.swing.JLabel lblHargaAsli;
+    private javax.swing.JLabel lblPenghematan;
+    private javax.swing.JTextField txtHargaAkhir;
+    private javax.swing.JTextField txtHargaAsli;
+    private javax.swing.JTextField txtPenghematan;
     // End of variables declaration//GEN-END:variables
 }
